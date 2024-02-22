@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en-US">
+    <head> <!--does not show in browser-->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width"> <!--Changes webpage to mobile dimensions -->
+
+        <title>"Coffee Shop Name"</title>
+        <style>
+         
+           
+         .flex-container {
+  /* We first create a flex layout context */
+  display: flex;
+  
+  /* Then we define the flow direction 
+     and if we allow the items to wrap 
+   * Remember this is the same as:
+   * flex-direction: row;
+   * flex-wrap: wrap;
+   */
+  flex-flow: column wrap;
+  
+  /* Then we define how is distributed the remaining space */
+  justify-content: space-around;
+  
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.flex-item {
+  background: #a19f4f;
+  width: 75px;
+  height: 10px;
+  margin-top: 10px;
+  display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    padding: 0;
+    margin: 5px;
+    list-style: none;
+    align-content: stretch;
+    align-items: flex-end;
+}
+        </style>
+    </head>
+
+        <body>
+            <ul class="flex-container">
+                <li class="flex-item"></li>
+                <li class="flex-item"></li>
+                <li class="flex-item"></li>
+              </ul>
+              
+        </body>
