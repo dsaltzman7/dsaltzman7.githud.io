@@ -3,23 +3,26 @@
     <head> <!--does not show in browser-->
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width"> <!--Changes webpage to mobile dimensions -->
-
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gabriela&display=swap" rel="stylesheet">
         <title>"Coffee Shop Name"</title>
         <style>
-         
+            
            
             h1 {
-                border: 5px solid #a19f4f ;
+                font-family: "Gabriela", serif;
+                border: 5px solid #4282f0 ;
                 padding: 10px ;
                 font-size: 5rem;
-                background-color: #776daf;
+                background-color: #ffffff;
                 margin: 0px;
-                color: #a19f4f;
+                color: #4282f0;
 
             }
             .large-image {
                 background-color: #d4d2d2;
-                border: 2px solid #a19f4f;
+                border: 2px solid #4282f0;
                 padding-top: 475px;
                 padding-right: 275px;
                 padding-left: 25px;
@@ -28,7 +31,7 @@
                 }
             .small-image {
                 background-color: #d4d2d2;
-                border: 2px solid #a19f4f;
+                border: 2px solid #4282f0;
                 margin: 5px;
                 padding: 25px;
                 padding-right: 5px;
@@ -36,19 +39,32 @@
                 width: 75px;
 
             }
+            .flex-container {
+                flex-flow: column wrap;
+                justify-content: space-around;
+                padding: 10px;
+                margin: 10px;
+                list-style:none;
+                width: 75px;
+                height: 10px;
+                display: flex;
+                top: 30px;
+                right: 50px;
+                flex-direction: column;
+                justify-content:space-evenly;
+
+
+
+            }
             .flex-item {
-              background: #a19f4f;
+              background: #4282f0;
               width: 75px;
               height: 10px;
-              margin-top: 10px;
-              display: flex;
-              flex-flow: column wrap;
               justify-content: space-around;
-              padding: 0;
-              margin: 5px;
-              list-style: none;
-              align-content: stretch;
-            align-items: flex-end;
+              margin: 15px;
+              align-items: flex-end;
+              position: absolute;
+  
             }
         </style>
     </head>
@@ -57,20 +73,16 @@
             <div id="wrapper">
                 <header>
                     <h1> Shop Name
-                        <div class="flex-item"></div> <!--|-->
-                        <div class="flex-item"></div> <!--Will Be a Menu Button-->
-                        <div class="flex-item"></div> <!--|-->
+                        <div class="flex-item"></div> <!--Menu Button-->
                     </h1>
                    
                 </header>
-               
+
                 <div class="large-image">Coffee image</div>
                 <p>Short Shop Description</p>
                 <!--link to other page-->
                 <h1>Menu
-                    <div class="flex-item"></div> <!--|-->
-                    <div class="flex-item"></div> <!--Will Be a Menu Button-->
-                    <div class="flex-item"></div> <!--|-->
+                    <div class="flex-item"></div> <!--Menu Button-->
                 </h1>
                
                 <div class="small-image">Item Image</div> 
@@ -87,18 +99,14 @@
                 <p>Quick Item Description</p>
                 <!--link to other page-->
                 <h1>Location
-                    <div class="flex-item"></div> <!--|-->
-                    <div class="flex-item"></div> <!--Will Be a Menu Button-->
-                    <div class="flex-item"></div> <!--|-->
+                    <div class="flex-item"></div> <!--Menu Button-->
                 </h1>
                 
                 <div class="large-image">Map Image</div>
                 <p>Description of Physical Location and Directions</p>
                 <!--link to another page-->
                 <h1>About Us
-                    <div class="flex-item"></div> <!--|-->
-                    <div class="flex-item"></div> <!--Will Be a Menu Button-->
-                    <div class="flex-item"></div> <!--|-->
+                    <div class="flex-item"></div> <!--Menu Button-->
                 </h1>
                
                 <div class="large-image">Picture of owners</div>
