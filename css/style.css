@@ -1,1 +1,23 @@
 /* initial stylesheet */
+nav ul {
+    list-style-type:none ;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+nav li {
+    float: left;
+}
+nav li a {
+    font-family: "Gabriela", serif;
+    font-size: 35px;
+    display: block;
+    color: #3553ff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+nav li a:hover {
+    background-color: #a3adf9;
+}
